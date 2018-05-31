@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: 765c2ee782f877b4983aebb27dfaef35
-timeCreated: 1526003461
-licenseType: Free
+guid: bf610f6f603f1424187160aa07eab430
 TextureImporter:
   fileIDToRecycleName:
-    21300000: armadillo_hablar
-    21300002: armadillo_ojoabierto
-    21300004: perro_hablar
-    21300006: armadillo_parpadeo
-    21300008: armadillo_ojoabierto2
+    21300000: PA_0
+    21300002: PA_1
+    21300004: PA_2
+    21300006: PA_3
+    21300008: PA_4
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -36,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -58,12 +56,14 @@ TextureImporter:
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -72,8 +72,53 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
-    maxTextureSize: 8192
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -86,77 +131,113 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: armadillo_hablar
+      name: PA_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 6338
-        width: 2742
-        height: 1102
+        y: 6335
+        width: 2746
+        height: 1106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b88dc1e0b3930a0408d5c8c09bf807a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: armadillo_ojoabierto
+      name: PA_1
       rect:
         serializedVersion: 2
-        x: 2949
-        y: 6022
-        width: 1489
-        height: 1419
+        x: 2946
+        y: 6019
+        width: 1492
+        height: 1422
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1cf430c774a167244b916f92f9c49dc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: perro_hablar
+      name: PA_2
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1898
-        width: 4356
-        height: 4081
+        x: 6
+        y: 1895
+        width: 4365
+        height: 4087
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2141f671d9af85d458253231b5c48539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: armadillo_parpadeo
+      name: PA_3
       rect:
         serializedVersion: 2
-        x: 224
+        x: 220
         y: 0
-        width: 1490
-        height: 1419
+        width: 1497
+        height: 1422
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5bf90ca5fa2a6ed42896da8710a4863b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
-      name: armadillo_ojoabierto2
+      name: PA_4
       rect:
         serializedVersion: 2
-        x: 1996
-        y: 1
-        width: 1489
-        height: 1419
+        x: 1990
+        y: 0
+        width: 1501
+        height: 1426
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9d502d287a4289843b1fd17b7c46c420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: f87be2942717c4340969b94a6f406374
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

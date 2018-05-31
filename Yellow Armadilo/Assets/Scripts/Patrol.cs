@@ -3,30 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Patrol : MonoBehaviour {
-
-    public float speed;
-    private bool movingRight = true;
-
-    public Transform groundDetection;
+    public int vel, Xdir;
+    SpriteRenderer sr;
+    public GameObject spawnpoint;
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+    }
 
     private void Update()
     {
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(Xdir, 0) * vel;
 
-        //Moves AI
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
-        RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1f);
-        if(groundInfo.collider == false){
-            if (movingRight == true){
-                transform.eulerAngles = new Vector3(0, -180, 0);
-                movingRight = false;
-            }else{
-                transform.eulerAngles = new Vector3(0, 0, 0);
-                movingRight = true;
-            }
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.transform.position = spawnpoint.transform.position;
         }
 
-        //Attacking AI
+        Flip();
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void Flip()
+    {
+        if (Xdir > 0)
+        {
+            Xdir = -1;
+            sr.flipX = false;
+        }
+        else
+        {
+            Xdir = 1;
+            sr.flipX = true;
+        }
     }
 
 }
